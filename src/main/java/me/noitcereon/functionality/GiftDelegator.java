@@ -20,7 +20,7 @@ public class GiftDelegator {
         // For every participant
         // Remove each from their respective list
         // Add gift pairing
-        for (String ignored : giftGivers) {
+        while (!gifters.getOptions().isEmpty()) {
             Map.Entry<String, String> pair = chooseOnePair(gifters, receivers, 0);
             gifters.remove(pair.getKey());
             receivers.remove(pair.getValue());
