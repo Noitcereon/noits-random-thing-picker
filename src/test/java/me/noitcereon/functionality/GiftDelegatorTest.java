@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class GiftDelegatorTest {
 
     @Test
-    void selectGiftPairings() {
+    void Given8UniqueNames_WhenGeneratingGiftPairs_ThenReturn8GiftPairs() {
         GiftDelegator giftDelegator = new GiftDelegator(TestData.getEvenAmountNamesWithoutDuplicates());
         Map<String, String> actual = giftDelegator.selectGiftPairings();
 
@@ -17,7 +17,7 @@ class GiftDelegatorTest {
         assertEquals(expected, actual.size());
     }
     @Test
-    void selectGiftPairings_multipleTimes() {
+    void Given8UniqueNames_WhenGeneratingGiftPairsMultipleTimes_ThenAlwaysReturn8GiftPairs() {
         int maxIterations = 100;
         int currentIteration = 0;
         while(maxIterations > currentIteration){
@@ -28,5 +28,13 @@ class GiftDelegatorTest {
             int expected = 8;
             assertEquals(expected, actual.size());
         }
+    }
+    @Test
+    void Given9UniqueNames_WhenGeneratingGiftPairs_ThenReturn8GiftPairs() {
+        GiftDelegator giftDelegator = new GiftDelegator(TestData.getOddAmountNamesWithoutDuplicates());
+        Map<String, String> actual = giftDelegator.selectGiftPairings();
+        System.out.println(actual);
+        int expected = 9;
+        assertEquals(expected, actual.size());
     }
 }
