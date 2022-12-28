@@ -10,7 +10,7 @@ The project has two main functionality classes: `ThingChooser` and `GiftDelegato
 
 It is a console application, which uses Maven for dependency management.
 
-So install as a standard Maven project you your favorite IDE and it should run.
+So install as a standard Maven project with your favorite IDE and it should run.
 
 ## Usage
 
