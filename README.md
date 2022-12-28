@@ -43,7 +43,7 @@ String result2 = chooser.chooseAndRemove()
         names.add("Noah");
         names.add("Jacob");
         
-        GiftDelegator giftDelegator = new GiftDelegator(FakeData.getNames());
+        GiftDelegator giftDelegator = new GiftDelegator(names);
         Map<String, String> pairs = giftDelegator.selectGiftPairings();
         
 ```        
