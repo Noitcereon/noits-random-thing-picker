@@ -10,6 +10,9 @@ target/
 .idea/libraries/
 .idea/jpa-buddy.xml
 .idea/index.pb # SonarLint
+.idea/encodings.xml
+.idea/git_toolbox_prj.xml
+sonarlint
 
 *.iws
 *.iml
