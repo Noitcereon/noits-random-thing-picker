@@ -12,6 +12,7 @@ target/
 .idea/index.pb # SonarLint
 .idea/encodings.xml
 .idea/git_toolbox_prj.xml
+.idea/uiDesigner.xml
 sonarlint
 
 *.iws
